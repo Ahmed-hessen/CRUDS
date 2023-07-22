@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: rgb(228, 227, 227);
+}
+.container {
+    width: 80%;
+    margin: auto;
+    color: black;
+}
+/* Start The Head Section  */
+.head {
+    text-align: center;
+    margin: 20px 0 35px 0 ;
+}
+/* End The Head Section  */
+
+/* Start Input Section  */
+input {
+    width: 100%;
+    height: 30px;
+    padding: 4px 10px;
+    margin: 7px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: black;
+    transition: 0.2s;
+}
+input:focus{
+    transform: scale(1.05);
+}
+.price input {
+    width: 20%;
+}
+.price #total{
+    background-color:red;
+    padding: 4px;
+    border-radius: 2px;
+}
+.price #total:before{
+    content: "Total: ";
+}
+button {
+    width: 100%;
+    height: 35px;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    background-color: skyblue;
+    transition: 0.5s;
+    font-weight: 600;
+}
+button:hover {
+    letter-spacing: 1px;
+    background-color: rgb(165, 221, 243);
+}
+/* End Input Section  */
+
+/* Start Output Section  */
+.search-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-button button {
+    width: 45%;
+}
+#deleteAllButton {
+    margin: 10px 0;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+table th{
+    text-transform: uppercase;
+    text-align: center;
+}
+table td {
+    text-align: center;
+}
+
+table button {
+    height: 30px;
+    padding: 4px 0;
+    margin: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    background-color: skyblue;
+    font-weight: 600;
+}
+table button:hover {
+        letter-spacing: 0;
+}
+/* End Output Section  */
+
+@media (max-width:992px){
+    body{
+        font-size: 14px;
+    }
+}
+@media (max-width:768px){
+    body{
+        font-size: 12px;
+    }
+}
+@media (max-width:480px){
+    body{
+        font-size: 10px;
+    }
+   
+}
